@@ -1,0 +1,7 @@
+<h1>Longest word challenge</h1>
+<% if @status == true %>
+  <p>Congratulations! <%=@word%> is a valid english word</p>
+<% else %>
+  <p>Unfortionately! <%=@word%> is not valid</p>
+<% end %>
+<%= link_to "Play again", new_path %>
